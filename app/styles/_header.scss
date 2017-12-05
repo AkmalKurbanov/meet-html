@@ -1,0 +1,15 @@
+	@media (max-width: $screen-xs-max) {
+		.header{
+			padding: 11px 0 0;
+			&__logo{
+				text-align: center;
+				a{
+					font-size: 24px;
+					font-weight: bold;
+					text-align: left;
+					color: #ff4757;
+					text-decoration: none;
+				}
+			}
+		}
+	}
