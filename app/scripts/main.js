@@ -15,18 +15,7 @@ $('#upfile1').click(function () {
 		$('.change-language li a').removeClass('active');
 		$(this).addClass('active');
 	});
-
-
-		$('.new-page__like-button').click(function(){
-		$('.new-page__like-button').removeClass('active');
-		$(this).addClass('active');
-	});
 	// active смены языка конец
-
-
-
-
-
 
 
 // select начало
@@ -103,8 +92,6 @@ $('.js-toggle-menu').click(function(e){
   $(this).toggleClass('open');
 });
 // menu toggle конец
-
-
 
 
 

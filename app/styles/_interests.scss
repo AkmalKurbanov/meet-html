@@ -1,0 +1,59 @@
+	@media (max-width: $screen-xs-max) {
+		.interests{
+			padding-bottom: 30px;
+			ul{
+				margin: 0;
+				padding-top: 15px;
+				li{
+					padding-left: 15px;
+					padding-right: 15px;
+					border-bottom: 1px solid #f7f7f7;	
+					&:first-child{
+						font-size: 14px;
+						color: #666;
+						padding-top: 15px;
+						padding-bottom: 15px;
+					}
+					.tasks-list-item {
+						display: block;
+						cursor: pointer;	
+						margin: 0;		
+						font-size: 14px;
+						padding-top: 15px;
+						padding-bottom: 15px;
+						.tasks-list-cb {
+							display: none;
+						}
+						.tasks-list-mark {
+							position: relative;
+							display: inline-block;
+							width: 20px;
+							height: 20px;				
+							background-color: #dfe1e2;
+							border-radius: 10em;
+							line-height: 20px;
+							vertical-align: top;
+							background-color: #1a82ff;
+							float: right;
+						}
+
+						.tasks-list-mark:before {
+							content: "\f00c";
+							font-family: "FontAwesome";					
+							position: absolute;
+							color: #fff;
+							left: 50%;
+							transform: translateX(-50%);
+						}
+
+						.tasks-list-cb:checked ~ .tasks-list-mark {
+							background-color: #dfe1e2;
+						}
+						.tasks-list-desc {
+							color: #000;
+						}			
+					}
+				}
+			}
+		}
+	}
