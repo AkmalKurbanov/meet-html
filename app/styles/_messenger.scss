@@ -1,0 +1,39 @@
+	@media (max-width: $screen-xs-max) {
+		.messenger{
+			&__wrap{			
+				display: inline-block;
+				position: relative;
+			}
+			&__avatar{
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				border-radius: 10em;
+				vertical-align: middle;
+				margin-bottom: 5px;
+				margin-right: 5px;
+				text-align: center;
+				line-height: 30px;
+				overflow: hidden;
+				span{
+					width: 13px;
+					height: 13px;
+					display: block;
+					background-color: #fff;
+					border: 2.5px solid #1a82ff; 
+					position: absolute;
+					border-radius: 10em;
+					bottom: 8px;
+					right: 3px;
+				}
+				img{
+					width: 100%;
+					max-width: 100%;
+				}			
+			}				
+// messenger chat начало
+
+// messenger chat конец
+
+}
+}

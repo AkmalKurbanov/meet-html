@@ -52,6 +52,15 @@ body {
 		outline: none;
 		margin-bottom: 15px;
 		border-radius: 2px;
+		&--wrong-input{
+			width: 100%;
+			height: 40px;
+			border: solid 1px #fe4141;
+			padding-left: 15px;
+			outline: none;
+			margin-bottom: 15px;
+			border-radius: 2px;
+		}
 	}
 	.textarea{
 		width: 100%;	
@@ -63,7 +72,7 @@ body {
 		outline: none;
 		padding-left: 15px;
 		padding-top: 15px;
-	}
+	}	
 	// input конец
 
 
@@ -79,14 +88,13 @@ body {
 		padding-bottom: 3px;
 		display: block;
 		cursor: pointer;
+		span{
+			font-size: 13.5px;
+			color: #00b0ca;
+		}
 	}
-	.excellent{
-		font-weight: 400;
-		font-size: 14px;
-		text-align: left;
-		color: #00b0ca;
-		padding-bottom: 3px;
-		display: block;
+	.wrong-label{
+		color: #fe4141;
 	}
 
 	$select-width: 100%;
@@ -112,7 +120,7 @@ body {
 		margin-bottom: 7px;
 	}
 	.select-styled {
-		padding-top: 7px;
+		padding-top: 10px;
 		padding-left: 15px;
 		position: absolute; 
 		top: 0;
@@ -133,7 +141,7 @@ body {
 			right: 15px;
 		}
 		&:hover {
-			background-color: rgba(223,220,220, 0.1);
+			background-color: #fff;
 		}
 		&:active, &.active {
 			&:after {
@@ -174,6 +182,26 @@ body {
 		button{
 			border: none;
 			outline: none;	
+		}
+	}
+	&--communication{
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-top: 10px;
+		.select-styled{
+			border: none;
+		}
+		.select-options{
+			margin-top: 10px;
+			border: none;
+			li {
+				border: none;
+				position: relative;
+				&:hover {
+					color: #ff4757;
+					background-color: #fff;
+				}
+			}
 		}
 	}
 }
