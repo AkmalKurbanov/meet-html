@@ -1,4 +1,4 @@
-	@media (max-width: $screen-xs-max) {
+	// @media (max-width: $screen-xs-max) {
 		.interests{
 			padding-bottom: 30px;
 			ul{
@@ -8,6 +8,7 @@
 					padding-left: 15px;
 					padding-right: 15px;
 					border-bottom: 1px solid #f7f7f7;	
+					list-style-type: none;
 					&:first-child{
 						font-size: 14px;
 						color: #666;
@@ -38,12 +39,13 @@
 						}
 
 						.tasks-list-mark:before {
-							content: "\f00c";
-							font-family: "FontAwesome";					
+							content: "";
+							font-family: "font";
 							position: absolute;
 							color: #fff;
 							left: 50%;
 							transform: translateX(-50%);
+							font-size: 8px;
 						}
 
 						.tasks-list-cb:checked ~ .tasks-list-mark {
@@ -56,4 +58,4 @@
 				}
 			}
 		}
-	}
+	// }

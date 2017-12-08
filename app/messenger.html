@@ -30,62 +30,65 @@
       <!-- messenger начало -->
       <div class="messenger">
         <div class="top-nav">         
-          <a href="#"><i class="icon-left"></i></a> 
-          <a href="#" class="messenger__wrap">           
-            <div class="messenger__avatar">
-             <img src="images/user1.jpg" alt="">
-             <span></span>
-           </div>
-         </a>
-         <p>Юля</p>
+          <div class="content-part">
+            <a href="#"><i class="icon-left"></i></a> 
+            <a href="#" class="messenger__wrap">           
+              <div class="messenger__avatar">
+               <img src="images/user1.jpg" alt="">
+               <span></span>
+             </div>
+           </a>
+           <p>Юля</p>
+         </div>
        </div>
 
-       <!-- messenger chat начало -->
-       <div class="wrapper">
-
-        <div class="phone-containter">
-          <div id="phone" class="phone">
-            <div class="message left">
+       <div class="content-part">
+        <!-- messenger chat начало -->
+         <div class="wrapper">
+         
+          <div class="phone-containter">
+            <div id="phone" class="phone">
+              <div class="message left">
+                <div class="message-text">
+                  Я целый день валялась в кровате, смотрела сериалы)) У меня сегодня виходной, вот думаю что делать вечером) Может увидимся сегодня?
+              </div>
+            </div>
+            <div class="message right">
               <div class="message-text">
-                Я целый день валялась в кровате, смотрела сериалы)) У меня сегодня виходной, вот думаю что делать вечером) Может увидимся сегодня?
+                Я только хотел тебе это предложить)))
+              </div>
+              <div class="message-text">
+                Я заеду в 9 часов
+              </div>
             </div>
-          </div>
-          <div class="message right">
-            <div class="message-text">
-              Я только хотел тебе это предложить)))
+            <div class="message left">
+              <div class="message-text">    
+                Хорошо буду тебя ждать            
+              </div>
             </div>
-            <div class="message-text">
-              Я заеду в 9 часов
-            </div>
-          </div>
-          <div class="message left">
-            <div class="message-text">    
-              Хорошо буду тебя ждать            
+            
+            <div class="message right">
+              <div class="message-text">
+                )
+              </div>
             </div>
           </div>
           
-          <div class="message right">
-            <div class="message-text">
-              )
-            </div>
+          <div class="send-container">
+            <form id="send">
+              <a href="#" class="img-wrap"><img src="images/messenger.png" alt=""></a>
+              <textarea id="msgInput" class="send-input" placeholder="Сообщение"></textarea>
+              <button type="submit" class="send-btn"><i class="fa fa-envelope-o"></i></button> 
+            </form>
           </div>
-        </div>
-
-        <div class="send-container">
-          <form id="send">
-            <a href="#" class="img-wrap"><img src="images/messenger.png" alt=""></a>
-            <textarea id="msgInput" class="send-input" placeholder="Сообщение"></textarea>
-            <button type="submit" class="send-btn"><i class="fa fa-envelope-o"></i></button> 
-          </form>
-        </div>
-
+          
         </div>
       </div>
       <!-- messenger chat конец -->
-
     </div>
-    <!-- messenger конец -->
-      
+  </div>
+  <!-- messenger конец -->
+  
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

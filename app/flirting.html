@@ -31,49 +31,53 @@
   <!-- flirting начало -->
   <div class="flirting">
     <div class="top-nav">         
-      <a href="#"><i class="icon-left"></i></a> 
-      <p>Флирт</p>  
-    </div>
-    <form action="" class="form">   
-      <div class="flirting__search-person">
-        <label for="search">Кого искать</label> 
-        <select>
-          <option value="Мужской">Всех</option>
-          <option value="Женский" rel="icon-temperature">Всех</option>
-        </select>   
+      <div class="content-part">
+        <a href="#"><i class="icon-left"></i></a> 
+        <p>Флирт</p>
       </div>
-
-      <div class="range">
-
-        <div class="item">
-          <p>Возраст</p>
-          <div id="slider" class="slider"></div>
-          <div class="first-input">
-            от  
-            <input  class="amount" min="18" max="27" id="first"> 
-            лет
-          </div>         
-          <div class="second-input">
-            до
-            <input  class="amount" min="18" max="27" id="first1">
-            лет
+    </div>
+    <div class="content-part">
+      <form action="" class="form">   
+        <div class="flirting__search-person">
+          <label for="search">Кого искать</label> 
+          <select>
+            <option value="Мужской">Всех</option>
+            <option value="Женский" rel="icon-temperature">Всех</option>
+          </select>   
+        </div>
+      
+        <div class="range">
+      
+          <div class="item">
+            <p>Возраст</p>
+            <div id="slider" class="slider"></div>
+            <div class="first-input">
+              от  
+              <input  class="amount" min="18" max="27" id="first"> 
+              лет
+            </div>         
+            <div class="second-input">
+              до
+              <input  class="amount" min="18" max="27" id="first1">
+              лет
+            </div>       
+          </div>
+        </div>
+        <div class="flirting__swich-block">
+          <div class="settings__block-swiches">
+           <div class="settings__swiches">
+             <p>Люди рядом</p>
+           </div>
+           <div class="holder">    
+            <input type="checkbox" value="None" id="check" name="check" class="check-ios"/>
+            <label for="check"></label>
+            <span></span>
           </div>       
         </div>
+        <button type="submit" class="button-mob">Применить</button>
       </div>
-      <div class="flirting__swich-block">
-        <div class="settings__block-swiches">
-         <div class="settings__swiches">
-           <p>Люди рядом</p>
-         </div>
-         <div class="holder">    
-          <input type="checkbox" value="None" id="check" name="check" class="check-ios"/>
-          <label for="check"></label>
-          <span></span>
-        </div>       
-      </div>
-      <button type="submit" class="button-mob">Применить</button>
-    </div>
-  </form>    
+    </form>  
+  </div>
 </div>
   <!-- flirting конец -->
 

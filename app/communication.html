@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -28,15 +29,17 @@
 <body>
 
   <!-- menu начало -->
-  <nav class="mobile-nav-wrap" role="navigation">
-    <ul class="mobile-header-nav">
-      <li><a href="#">Моя страница</a></li>
-      <li><a href="#">Знакомства</a></li>
-      <li><a href="#">Общение</a></li>
-      <li><a href="#">Настройки</a></li>
-      <li><a href="#">Выйти</a></li>
-    </ul>
-  </nav>
+  <div class="content-part">
+    <nav class="mobile-nav-wrap" role="navigation">
+      <ul class="mobile-header-nav">
+        <li><a href="#"><i class="icon-user"></i> Моя страница</a></li>
+        <li><a href="#"><i class="icon-smile"></i> Знакомства</a></li>
+        <li><a href="#"><i class="icon-chat"></i> Общение <span>8</span></a></li>
+        <li><a href="#"><i class="icon-gear"></i> Настройки</a></li>
+        <li><a href="#"><i class="icon-exit"></i> Выйти</a></li>
+      </ul>
+    </nav>
+  </div>
   <!-- menu конец -->
   <!-- trigger начало -->
   <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
@@ -48,18 +51,20 @@
 
   <!-- communication начало -->
   <div class="communication">
-    <div class="top-nav">            
+    <div class="top-nav">    
+    <div class="content-part"></div>        
     </div>
-    <form action="" class="form form--communication">
-     <select >
-      <option>Все контакты</option>
-      <option rel="icon-temperature">Вы понравились</option>
-      <option>Вам понравились</option>
-    </select> 
-  </form>
-  <div class="communication__contacts">
-    <ul>
-      <li>
+    <div class="content-part">
+      <form action="" class="form form--communication">
+        <select >
+         <option>Все контакты</option>
+         <option rel="icon-temperature">Вы понравились</option>
+         <option>Вам понравились</option>
+       </select> 
+     </form>   
+     <div class="communication__contacts">
+      <ul>
+        <li>
         <a href="#">
           <div class="communication__img-wrap">
             <div class="communication__avatar-contacts">
@@ -162,6 +167,7 @@
       </li>
     </ul>
   </div>
+  
   <div class="new-page__information">    
     <div class="new-page__agree-user">
       <h2>Пользовательское <br> соглашение</h2>
@@ -182,6 +188,8 @@
       <p>© Beeline 2017. Все права <br> защищены</p>
     </div>
   </div>
+</div>
+</div>
   <!-- communication конец -->
 
 

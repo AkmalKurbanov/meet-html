@@ -28,15 +28,15 @@
   <body>
       
    <!-- menu начало -->
-    <nav class="mobile-nav-wrap" role="navigation">
-      <ul class="mobile-header-nav">
-        <li><a href="#">Моя страница</a></li>
-        <li><a href="#">Знакомства</a></li>
-        <li><a href="#">Общение</a></li>
-        <li><a href="#">Настройки</a></li>
-        <li><a href="#">Выйти</a></li>
-      </ul>
-    </nav>
+   <nav class="mobile-nav-wrap" role="navigation">
+    <ul class="mobile-header-nav">
+      <li><a href="#"><i class="icon-user"></i> Моя страница</a></li>
+      <li><a href="#"><i class="icon-smile"></i> Знакомства</a></li>
+      <li><a href="#"><i class="icon-chat"></i> Общение <span>8</span></a></li>
+      <li><a href="#"><i class="icon-gear"></i> Настройки</a></li>
+      <li><a href="#"><i class="icon-exit"></i> Выйти</a></li>
+    </ul>
+  </nav>
     <!-- menu конец -->
    <!-- trigger начало -->
    <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
@@ -49,9 +49,12 @@
   <!-- new-page начало -->
   <div class="new-page new-page--my-page">
     <div class="top-nav">         
-    <a href="#"><img src="images/pensil.png" alt=""></a>   
+      <div class="content-part">
+        <a href="#"><img src="images/pensil.png" alt=""></a>
+      </div> 
     </div>
-    <div class="new-page__information">
+  <div class="content-part">
+      <div class="new-page__information">
       <div class="new-page__main-info">
         <div class="status">
           <h2>Юлия Новикова</h2>        
@@ -161,6 +164,7 @@
         <p>© Beeline 2017. Все права <br> защищены</p>
       </div>
     </div>
+  </div>
     <!-- new-page конец -->
 
 

@@ -25,6 +25,14 @@ $('.popup-gallery-js').magnificPopup({
 		navigateByImgClick: true,
 		preload: [0, 1],
 		tCounter: '<span class="mfp-counter">%curr% из %total%</span>',
+	},
+	callbacks: {
+		beforeOpen: function() {
+			$('.settings-js').slideDown();
+		},
+		afterClose: function() {
+			$('.settings-js').slideUp();
+		},
 	}
 });
 // popup галерея конец
@@ -174,6 +182,15 @@ $('.js-toggle-menu').click(function(e){
 	$('.mobile-header-nav').slideToggle();
 	$(this).toggleClass('open');
 });
+
+// $('.popup-gallery-js ul li a').Toggle(function(e){
+// 	e.preventDefault();
+// 	$('.settings-js').slideToggle();
+// 	// $(this).toggleClass('close');
+// });
+
+
+
 // menu toggle конец
 
 

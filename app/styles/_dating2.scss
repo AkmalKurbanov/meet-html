@@ -1,4 +1,4 @@
-@media (max-width: $screen-xs-max) {
+// @media (max-width: $screen-xs-max) {
 	.dating2{
 		&__cont{
 			display: flex;
@@ -7,7 +7,8 @@
 			flex-direction: column;
 			height: 100vh;
 			text-align: center;
-			background-color: #f7f7f7;		
+			background-color: #f7f7f7;
+			width: 100%;		
 			h2{
 				font-size: 22px;
 				margin: 0;
@@ -60,4 +61,4 @@
 			}
 		}
 	}
-}
+// }
