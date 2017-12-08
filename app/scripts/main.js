@@ -1,5 +1,33 @@
 $(document).ready(function(){
 
+// popup settings начало
+$('.popup-gallery-js ul li a').click(function(e){
+	e.preventDefault();
+	$('.settings-js').slideToggle('show');
+	$(this).toggleClass('icon');
+});
+$('.settings-js').click(function(e){
+	e.preventDefault();
+	$('.settings-menu').slideToggle();
+	$(this).toggleClass('icon');
+});
+// popup settings конец
+
+
+// popup галерея начало
+$('.popup-gallery-js').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	tLoading: 'Загрузка изображения #%curr%...',
+	tClose: 'Закрыть (Esc)',
+	gallery: {
+		enabled: true,
+		navigateByImgClick: true,
+		preload: [0, 1],
+		tCounter: '<span class="mfp-counter">%curr% из %total%</span>',
+	}
+});
+// popup галерея конец
 
 
 
@@ -94,41 +122,41 @@ $('.popup-content').magnificPopup({
 
 
 $('#send').bind('submit', function() {
-  var msgText = $('#msgInput').val();
-  $('#msgInput').val('');
-  
-  if (msgText != '') addMsg(1, msgText);
-  
-  $('#phone').animate({ scrollTop: $('#phone').height() }, 600);
-  
-  return false;
+	var msgText = $('#msgInput').val();
+	$('#msgInput').val('');
+
+	if (msgText != '') addMsg(1, msgText);
+
+	$('#phone').animate({ scrollTop: $('#phone').height() }, 600);
+
+	return false;
 })
 
 function addMsg(people, msg) {
-  
-  var side = 'right';
-  var $_phone = $('#phone');
-  var $_lastMessage = $('#phone .message:last');
-  
-  if (people == 1) side = 'right';
-  if (people == 2) side = 'left';
-  
-  if ($_lastMessage.hasClass(side)) {
-    
-    $_lastMessage.append(
-      $('<div>').addClass('message-text').text(msg)
-    )
-    
-  } else {
-    
-    $_phone.append(
-      $('<div>').addClass('message '+side).append(
-        $('<div>').addClass('message-text').text(msg)
-      )
-    )
-    
-  }
-  
+
+	var side = 'right';
+	var $_phone = $('#phone');
+	var $_lastMessage = $('#phone .message:last');
+
+	if (people == 1) side = 'right';
+	if (people == 2) side = 'left';
+
+	if ($_lastMessage.hasClass(side)) {
+
+		$_lastMessage.append(
+			$('<div>').addClass('message-text').text(msg)
+			)
+
+	} else {
+
+		$_phone.append(
+			$('<div>').addClass('message '+side).append(
+				$('<div>').addClass('message-text').text(msg)
+				)
+			)
+
+	}
+
 }
 // messenger chat конец
 
@@ -205,7 +233,37 @@ function addMsg(people, msg) {
 
 
 
+// range scroll начало 
+var $from = $( '#first' );
+var $to = $( '#first1' );
+var $slider = $( '#slider' );
+$slider.slider({
+	range: true,
+	min: 18,
+	max: 27,
+	values: [ 18, 27 ],
+	slide: function( event, ui ) {
+		$from.val(ui.values[ 0 ]);
+		$to.val(ui.values[ 1 ]);
+	}
+});
+$from.val($slider.slider( 'values', 0 ));
+$to.val($slider.slider( 'values', 1 ));
 
+$from.change(function(){
+	var val1 = parseInt($from.val());
+	var val2 = parseInt($to.val());
+	val1 = val1 < val2 ? val1 : val2;
+	$slider.slider( 'values', 0, val1 );
+});
+$to.change(function(){
+	var val1 = parseInt($from.val());
+	var val2 = parseInt($to.val());
+	val2 = val2 > val1 ? val2 : val1;
+	$slider.slider( 'values', 1, val2 );
+})
+
+// range scroll конец
 
 
 

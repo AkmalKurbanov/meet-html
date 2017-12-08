@@ -48,7 +48,7 @@
   <!-- new-page начало -->
   <div class="new-page new-page--my-page">
     <div class="top-nav">         
-    <a href="#"><img src="images/pensil.png" alt=""></a>   
+    <a href="#" class="pensil"><img src="images/pensil.png" alt=""></a>        
     </div>
     <div class="new-page__information">
       <div class="new-page__main-info">
@@ -172,9 +172,8 @@
     <!-- popup ссылки начало -->
     <a href="#text-popup" class="popup-content">Вы успешно подписаны на услугу</a><br><br>
     <a href="#text-popup2" class="popup-content">Загрузите фото,  раздел не доступен</a><br><br>
-    <a href="#text-popup3" class="popup-content">На вашем счету недостаточно  средств для продолжения <br> пользования услугой. 
-
-        Услуга станет доступна через некоторое время</a>
+    <a href="#text-popup3" class="popup-content">На вашем счету недостаточно  средств для продолжения <br> пользования услугой. Услуга станет доступна через некоторое время</a><br><br>
+    <a href="#text-popup4" class="popup-content">Нажмите на основное меню</a><br><br>
 
 
         <div id="text-popup" class="white-popup mfp-hide">
@@ -187,7 +186,18 @@
           <p>На вашем счету недостаточно <br> средств для продолжения <br> пользования услугой. <br> <br>
             Услуга станет доступна через <br> некоторое время</p>
           </div>
-      <!-- popup ссылки конец -->
+
+
+
+          <div id="text-popup4" class="hint mfp-hide">
+            <div class="desc desc--main-menu">
+            <div class="img-wrap"><img src="images/hint2.png" alt=""></div> 
+            <h2>Нажмите на основное <br> меню</h2>
+            <p>С помощью него вы можите <br> перемещаться по сайту</p>
+            <a href="#">Пропустить</a>
+          </div>
+        </div>
+        <!-- popup ссылки конец -->
 
 
     <!-- build:js scripts/vendor.js -->
@@ -197,6 +207,7 @@
     <script src="/bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
     <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

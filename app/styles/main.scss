@@ -1,5 +1,5 @@
 $icon-font-path: '../fonts/';
-@import "../fonts/icon/css/fontello.css";
+@import "../fonts/icon/css/font.css";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/font-awesome/scss/font-awesome.scss";
@@ -13,8 +13,10 @@ $icon-font-path: '../fonts/';
 @import "_registration";
 @import "_new-page";
 @import "_dating2";
+@import "_dating";
 @import "_settings";
 @import "_interests";
 @import "_editing";
 @import "_messenger";
 @import "_communication";
+@import "_flirting";

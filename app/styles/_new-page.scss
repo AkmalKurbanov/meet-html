@@ -2,10 +2,7 @@
 	.new-page{
 		&--my-page{
 			.top-nav{
-				padding-right: 15px;
-				a{
-					float: right;
-				}
+				padding-right: 15px;			
 			}
 		}
 		&__information{	
@@ -25,6 +22,14 @@
 				display: inline-block;
 				margin-right: 10px;
 			}		
+			&--popup-foto{
+				background-color: transparent;
+				ul{
+					li{
+						padding-left: 30px;
+					}
+				}
+			}
 		}
 		&__img-wrap{
 			max-width: 129px;
@@ -55,7 +60,7 @@
 					font-weight: 500;
 					padding-bottom: 7px;
 				}
-			}
+			}	
 		}
 		&__thumbnails{
 			padding-left: 15px;	
